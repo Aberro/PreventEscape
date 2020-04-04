@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreventEscape", "PreventEscape.csproj", "{D701D5AA-D88A-4025-A871-791A0F47852D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D701D5AA-D88A-4025-A871-791A0F47852D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D701D5AA-D88A-4025-A871-791A0F47852D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D701D5AA-D88A-4025-A871-791A0F47852D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D701D5AA-D88A-4025-A871-791A0F47852D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB2607B3-7483-4832-A8E9-9996E5533B0A}
+	EndGlobalSection
+EndGlobal

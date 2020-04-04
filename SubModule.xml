@@ -1,0 +1,40 @@
+<Module>
+    <Name value="Prevent Nobility Escape"/>
+    <Id value="PreventEscape"/>
+    <Version value="v1.0.0"/>
+    <SingleplayerModule value="true"/>
+    <MultiplayerModule value="false"/>
+    <DependedModules>
+        <DependedModule Id="Native"/>
+        <DependedModule Id="SandBoxCore"/>
+        <DependedModule Id="Sandbox"/>
+        <DependedModule Id="CustomBattle"/>
+        <DependedModule Id="StoryMode" />
+    </DependedModules>
+    <SubModules>
+        <SubModule>
+            <Name value="PreventEscapeSubModule"/>
+            <!-- Path to the DLL File, if your Mod is called MyModule then it should be   -->
+            <DLLName value="PreventEscape.dll"/>
+            <SubModuleClassType value="PreventEscape.PreventEscapeSubModule"/>
+            <Tags>
+                <Tag key="DedicatedServerType" value="none" />
+                <Tag key="IsNoRenderModeElement" value="false" />
+            </Tags>
+        </SubModule>
+    </SubModules>
+  <Config>
+		<!-- Base chance that any given hero would escape from other non-bandit hero's imprisonment -->
+		<!-- Original game value: 0.1 -->
+	  <BaseEscapeChance>0.01</BaseEscapeChance>
+		<!-- Base chance that any given hero would escape from other bandit hero's imprisonment -->
+		<!-- Original game value: 0.1 -->
+		<BaseEscapeChanceFromBandits>0.1</BaseEscapeChanceFromBandits>
+		<!-- Base chance is multiplied by this value if captor is player -->
+		<!-- Original game value: 0.33 -->
+		<EscapeFromPlayerModifier>0.33</EscapeFromPlayerModifier>
+		<!-- Base chance is multiplied by this value if captor and prisoner factions is at war -->
+		<!-- Original game value: 1.0 -->
+		<AtWarModifier>0.1</AtWarModifier>
+  </Config>
+</Module>
