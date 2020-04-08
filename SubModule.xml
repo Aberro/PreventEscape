@@ -36,5 +36,33 @@
 		<!-- Base chance is multiplied by this value if captor and prisoner factions is at war -->
 		<!-- Original game value: 1.0 -->
 		<AtWarModifier>0.1</AtWarModifier>
-  </Config>
+
+
+		<!-- These values used in hero ransom evaluation-->
+		<!-- Evaluator sums values, multiplied by appropriate factor, and then multiplies values based on whether hero is faction or kingdom leader and factions is at war -->
+		<!-- Algorithm is following: (ClanStrength*RansomStrengthFactor + ClanRenown*RansomRenownFactor + RecruitmentCost*RansomRecruitmentCostFactor)*(1.0+(Relation/100.0)*RansomRelationFactor)*(FactionsIsAtWar?RansomAtWarFactor:1)*(IsKingdomLeader?RansomKingdomLeaderFactor:(IsFactionLeader?RansomFactionLeaderFactor:RansomOtherFactor)) -->
+
+		<!-- Multiplier for total strength of a faction to which hero belongs -->
+		<RansomStrengthFactor>100</RansomStrengthFactor>
+		<!-- Multiplier for renown of a clan to which hero belongs -->
+		<RansomRenownFactor>10</RansomRenownFactor>
+		<!-- Multiplier for recruitment cost of this hero (based on his level) -->
+		<RansomRecruitmentCostFactor>10</RansomRecruitmentCostFactor>
+		<!-- Multiplier for relation of evaluator to evaluated hero (applied to relation value) -->
+		<RansomRelationFactor>2</RansomRelationFactor>
+		<!-- Multiplier for sum of previous factors, applied if evaluator faction and hero faction is at war -->
+		<RansomAtWarFactor>2</RansomAtWarFactor>
+		<!-- Multiplier for sum of previous factors, applied if hero is kingdom leader -->
+		<RansomKingdomLeaderFactor>4</RansomKingdomLeaderFactor>
+		<!-- Multiplier for sum of previous factors, applied if hero is leader of faction or clan -->
+		<RansomFactionLeaderFactor>2</RansomFactionLeaderFactor>
+		<!-- Multiplier for sum of previous factors, applied if hero neither is kingdom leader nor faction/clan leader -->
+		<RansomOtherFactor>1</RansomOtherFactor>
+
+
+		<!-- Value by which prisoner relation to ransomer will be improved -->
+		<RansomRelationImprovement>10</RansomRelationImprovement>
+		<!-- Value by which prisoner's leader relation to ransomer will be improved (if prisoner isn't leader) -->
+		<RansomLeaderRelationImprovement>2</RansomLeaderRelationImprovement>
+	</Config>
 </Module>
