@@ -34,7 +34,7 @@ namespace PreventEscape.Actions
 				foreach (var children in categories)
 				{
 					var identifier = identifierFieldInfo?.GetValue(children) as StatisticsDataIdentifier;
-					if (identifier?.Description == "character")
+					if (identifier?.Description == "trade")
 					{
 						parent = identifier;
 						break;

@@ -58,6 +58,7 @@
     </Reference>
     <Reference Include="TaleWorlds.Localization">
       <HintPath>D:\GAMES\Steam\SteamApps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.Localization.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.MountAndBlade">
       <HintPath>Win64_Shipping_Client\TaleWorlds.MountAndBlade.dll</HintPath>
@@ -65,9 +66,11 @@
     </Reference>
     <Reference Include="TaleWorlds.PlayerServices">
       <HintPath>D:\GAMES\Steam\SteamApps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.PlayerServices.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TaleWorlds.SaveSystem">
       <HintPath>D:\GAMES\Steam\SteamApps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.SaveSystem.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +78,8 @@
     <Compile Include="Barterables\ExtraditePrisonerBarterable.cs" />
     <Compile Include="Barterables\SetPrisonerFreeNewBarterable.cs" />
     <Compile Include="CampaignBehaviors\PrisonerBarterBehavior.cs" />
+    <Compile Include="CampaignBehaviors\RequirePrisonerFreeBehavior.cs" />
+    <Compile Include="DialogBuilder.cs" />
     <Compile Include="HeroEvaluator.cs" />
     <Compile Include="PreventEscapeSubModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -50,6 +50,8 @@ namespace PreventEscape
 							EscapeFromPlayerModifier = 0.33;
 						if (!double.TryParse(mainNode["AtWarModifier"]?.InnerText ?? "", out AtWarModifier))
 							AtWarModifier = 0.1;
+						if (!double.TryParse(mainNode["RequirePrisonerFreeChance"]?.InnerText ?? "", out RequirePrisonerFreeBehavior.RequirementChance))
+							RequirePrisonerFreeBehavior.RequirementChance = 0.1;
 						if (!double.TryParse(mainNode["RansomStrengthFactor"]?.InnerText ?? "", out HeroEvaluator.StrengthFactor))
 							HeroEvaluator.StrengthFactor = 100.0;
 						if (!double.TryParse(mainNode["RansomRenownFactor"]?.InnerText ?? "", out HeroEvaluator.RenownFactor))
@@ -70,6 +72,12 @@ namespace PreventEscape
 							SetPrisonerFreeNewBarterable.RansomRelationImprovement = 10;
 						if (!int.TryParse(mainNode["RansomLeaderRelationImprovement"]?.InnerText ?? "", out SetPrisonerFreeNewBarterable.RansomLeaderRelationImprovement))
 							SetPrisonerFreeNewBarterable.RansomLeaderRelationImprovement= 10;
+						int ivalue;
+						if (!int.TryParse(mainNode["PrisonerBarterConversationContextId"]?.InnerText ?? "", out ivalue) ||
+						    RequirePrisonerFreeBehavior.PrisonerBarterConversationContext < 0)
+							RequirePrisonerFreeBehavior.PrisonerBarterConversationContext = (ConversationContext)6;
+						else
+							RequirePrisonerFreeBehavior.PrisonerBarterConversationContext = (ConversationContext)ivalue;
 					}
 				}
 				catch
@@ -81,11 +89,16 @@ namespace PreventEscape
 				}
 			}
 		}
+
 		public override void OnGameLoaded(Game game, object initializerObject)
 		{
 			base.OnGameLoaded(game, initializerObject);
 			var campaignGameStarter = initializerObject as CampaignGameStarter;
-			campaignGameStarter?.AddBehavior(new PrisonerBarterBehavior());
+			if(campaignGameStarter != null)
+			{ 
+				campaignGameStarter.AddBehavior(new PrisonerBarterBehavior());
+				campaignGameStarter.AddBehavior(new RequirePrisonerFreeBehavior());
+			}
 		}
 		public override bool DoLoading(Game game)
 		{
@@ -101,36 +114,7 @@ namespace PreventEscape
 			CampaignEvents.DailyTickHeroEvent.ClearListeners(prisonerEscapeBehaviour);
 			CampaignEvents.DailyTickHeroEvent.ClearListeners(barterBehaviour);
 			CampaignEvents.DailyTickHeroEvent.AddNonSerializedListener(prisonerEscapeBehaviour, hero => PrisonerEscapeHeroDailyTickWrapper(hero, originalPrisonerEscapeHeroTick));
-			CampaignEvents.DailyTickHeroEvent.AddNonSerializedListener(prisonerEscapeBehaviour, hero => BarterDailyTickHeroWrapper(hero, originalBarterHeroTick));
 			return base.DoLoading(game);
-		}
-		private void BarterDailyTickHeroWrapper(Hero hero, Action<Hero> originalBehavior)
-		{
-			try
-			{
-				if (!hero.IsPrisoner || hero.Clan == null || (hero.PartyBelongedToAsPrisoner == null || (double)MBRandom.RandomFloat >= 0.100000001490116))
-					return;
-				var captorParty = hero.PartyBelongedToAsPrisoner;
-				var captorFaction = captorParty.MapFaction;
-				var offerer = hero.Clan.Leader;
-				var captorLeader = captorFaction.Leader;
-				var prisonerClan = hero.Clan;
-				SetPrisonerFreeBarterable prisonerFreeBarterable = new SetPrisonerFreeBarterable(hero, captorLeader, captorParty, offerer);
-				if (prisonerFreeBarterable.GetValueForFaction(captorFaction) + prisonerFreeBarterable.GetValueForFaction(prisonerClan) <= 0)
-					return;
-				if (captorFaction.IsBanditFaction)
-				{
-					BarterData barterData = new BarterData(hero.Clan.Leader, captorFaction.Leader, (PartyBase)null, (PartyBase)null,
-						(BarterManager.BarterContextInitializer)null, 0, true);
-					barterData.AddBarterable<DefaultsBarterGroup>(prisonerFreeBarterable);
-					Campaign.Current.BarterManager.ExecuteAIBarter(barterData, captorFaction, hero.Clan, captorFaction.Leader, hero.Clan.Leader);
-				}
-			}
-			catch (Exception e)
-			{
-				if (originalBehavior != null)
-					originalBehavior(hero);
-			}
 		}
 		private void PrisonerEscapeHeroDailyTickWrapper(Hero hero, Action<Hero> originalBehavior)
 		{

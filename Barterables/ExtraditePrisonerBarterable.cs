@@ -39,15 +39,15 @@ namespace PreventEscape.Barterables
 		}
 		public override void Apply()
 		{
-			ExtraditePrisonerAction.ApplyExchange(_prisonerCharacter, OriginalOwner, OriginalParty, _ransompayer, _ransompayer.PartyBelongedTo.Party);
+			ExtraditePrisonerAction.ApplyExchange(_prisonerCharacter, OriginalOwner, OriginalParty, _ransompayer, _ransompayer?.PartyBelongedTo?.Party);
 		}
 		public override string StringID => "extradite_prisoner_barterable";
 		public override TextObject Name
 		{
 			get
 			{
-				StringHelpers.SetCharacterProperties("PRISONER", this._prisonerCharacter?.CharacterObject, (TextObject)null, (TextObject)null);
-				return new TextObject("Extradite {PRISONER.NAME}", (Dictionary<string, TextObject>)null);
+				StringHelpers.SetCharacterProperties("PRISONER", this._prisonerCharacter?.CharacterObject);
+				return new TextObject("Extradite {PRISONER.NAME}");
 			}
 		}
 	}
