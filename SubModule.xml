@@ -35,7 +35,7 @@
 		<EscapeFromPlayerModifier>0.33</EscapeFromPlayerModifier>
 		<!-- Base chance is multiplied by this value if captor and prisoner factions is at war -->
 		<!-- Original game value: 1.0 -->
-		<AtWarModifier>0.1</AtWarModifier>
+		<EscapeAtWarModifier>0.1</EscapeAtWarModifier>
 
 
 		<!-- These values used in hero ransom evaluation-->

@@ -41,8 +41,15 @@
     <AssemblyOriginatorKeyFile>PreventEscape.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Lib.Harmony.2.0.0.9\lib\net472\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="MBOptionScreen, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Bannerlord.MBOptionScreen.1.1.7\lib\net472\MBOptionScreen.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
     <Reference Include="System.Xml" />
     <Reference Include="TaleWorlds.CampaignSystem">
       <HintPath>Win64_Shipping_Client\TaleWorlds.CampaignSystem.dll</HintPath>
@@ -78,9 +85,13 @@
     <Compile Include="Barterables\ExtraditePrisonerBarterable.cs" />
     <Compile Include="Barterables\SetPrisonerFreeNewBarterable.cs" />
     <Compile Include="CampaignBehaviors\PrisonerBarterBehavior.cs" />
+    <Compile Include="CampaignBehaviors\PrisonerEscapeNewBehavior.cs" />
     <Compile Include="CampaignBehaviors\RequirePrisonerFreeBehavior.cs" />
+    <Compile Include="CampaignBehaviors\SetPrisonerFreeNewBarterBehavior.cs" />
     <Compile Include="DialogBuilder.cs" />
+    <Compile Include="HarmonyPatches\MakePeaceActionPatch.cs" />
     <Compile Include="HeroEvaluator.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="PreventEscapeSubModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -88,7 +99,15 @@
     <Content Include="SubModule.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="PreventEscape.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="external\BannerLib\BannerLib.Misc\BannerLib.Misc.csproj">
+      <Project>{b743fc1a-0e1c-488a-9787-f7cdaf1d6a48}</Project>
+      <Name>BannerLib.Misc</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

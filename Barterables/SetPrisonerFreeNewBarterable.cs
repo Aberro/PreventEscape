@@ -6,33 +6,36 @@ namespace PreventEscape.Barterables
 {
 	public class SetPrisonerFreeNewBarterable : SetPrisonerFreeBarterable
 	{
-		public static int RansomRelationImprovement;
-		public static int RansomLeaderRelationImprovement;
-		private readonly Hero _prisonerCharacter;
-		private readonly Hero _ransompayer;
+		private readonly Hero _prisoner;
+		private readonly Hero _ransomPayer;
 
-		public SetPrisonerFreeNewBarterable(Hero prisonerCharacter, Hero captor, PartyBase ownerParty, Hero ransompayer) : base(prisonerCharacter, captor, ownerParty, ransompayer)
+		public SetPrisonerFreeNewBarterable(Hero prisoner, Hero captor, PartyBase ownerParty, Hero ransomPayer) : base(prisoner, captor, ownerParty, ransomPayer)
 		{
-			_prisonerCharacter = prisonerCharacter;
-			_ransompayer = ransompayer;
+			_prisoner = prisoner;
+			_ransomPayer = ransomPayer;
 		}
 		public override int GetUnitValueForFaction(IFaction faction)
 		{
-			return HeroEvaluator.Evaluate(_prisonerCharacter, OriginalOwner, _ransompayer, faction);
+			if ((_ransomPayer?.IsFactionLeader ?? false) && (OriginalOwner?.MapFaction == _ransomPayer.MapFaction))
+				return 0;
+			if (OriginalOwner?.MapFaction == _ransomPayer?.MapFaction)
+				return 0;
+			var result = HeroEvaluator.Evaluate(_prisoner, OriginalOwner, _ransomPayer, faction);
+			return result;
 		}
 		public override void Apply()
 		{
 			base.Apply();
-			if (_prisonerCharacter == null || _ransompayer == null)
+			if (_prisoner == null || _ransomPayer == null)
 				return;
-			ChangeRelationAction.ApplyRelationChangeBetweenHeroes(_ransompayer, _prisonerCharacter, RansomRelationImprovement);
-			if (!_prisonerCharacter.IsFactionLeader)
-			{
-				if (_prisonerCharacter.Clan?.Leader != null && _prisonerCharacter.Clan?.Leader != _prisonerCharacter)
-					ChangeRelationAction.ApplyRelationChangeBetweenHeroes(_ransompayer, _prisonerCharacter.Clan?.Leader, RansomLeaderRelationImprovement);
-				if(_prisonerCharacter.MapFaction?.Leader != null && _prisonerCharacter.MapFaction?.Leader != _prisonerCharacter.Clan?.Leader && _prisonerCharacter.MapFaction?.Leader != _prisonerCharacter)
-					ChangeRelationAction.ApplyRelationChangeBetweenHeroes(_ransompayer, _prisonerCharacter.MapFaction?.Leader, RansomLeaderRelationImprovement);
-			}
+			if(_ransomPayer != _prisoner)
+				// Improve relation of prisoner to ransomPayer
+				ChangeRelationAction.ApplyRelationChangeBetweenHeroes(_prisoner, _ransomPayer, Settings.Instance.RansomRelationImprovement);
+			// Improve relation of prisoner's leaders to ransomPayer
+			if (_prisoner.Clan?.Leader != null && _prisoner.Clan?.Leader != _prisoner && _prisoner.Clan.Leader != _ransomPayer)
+				ChangeRelationAction.ApplyRelationChangeBetweenHeroes(_prisoner.Clan?.Leader,  _ransomPayer, (int)(Settings.Instance.RansomRelationImprovement/2f));
+			if(_prisoner.MapFaction?.Leader != null && _prisoner.MapFaction?.Leader != _prisoner.Clan?.Leader && _prisoner.MapFaction?.Leader != _prisoner && _prisoner.MapFaction.Leader != _ransomPayer)
+				ChangeRelationAction.ApplyRelationChangeBetweenHeroes(_prisoner.MapFaction?.Leader, _ransomPayer, (int)(Settings.Instance.RansomRelationImprovement/2f));
 		}
 	}
 }

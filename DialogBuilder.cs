@@ -84,7 +84,7 @@ namespace PreventEscape
 		[PublicAPI]
 		public Expressions(string key, string animationName)
 		{
-			Tag = $"[{(string.IsNullOrEmpty(key) ? key + ':' : "")}{animationName}]";
+			Tag = $"[{(!string.IsNullOrEmpty(key) ? key + ':' : "")}{animationName}]";
 		}
 		[PublicAPI]
 		public Expressions(Key key, string animationName)
@@ -108,7 +108,7 @@ namespace PreventEscape
 					keyText = null;
 					break;
 			}
-			Tag = $"[{(string.IsNullOrEmpty(keyText) ? keyText + ':' : "")}{animationName}]";
+			Tag = $"[{(!string.IsNullOrEmpty(keyText) ? keyText + ':' : "")}{animationName}]";
 		}
 		private Expressions(string tag)
 		{
@@ -146,7 +146,7 @@ namespace PreventEscape
 				_builder = builder;
 				InputToken = inputToken;
 				TokenName = tokenName;
-				OutputToken = "close_window";
+				OutputToken = TokenName;
 				Builder.AddToken(this);
 			}
 
@@ -191,8 +191,8 @@ namespace PreventEscape
 		}
 		private class PartnerDialogToken : DialogToken, IPartnerDialogToken
 		{
-			public PartnerDialogToken([NotNull]DialogBuilder builder, DialogToken inputTokenToken, [NotNull]string tokenName)
-				: base(builder, inputTokenToken, tokenName)
+			public PartnerDialogToken([NotNull]DialogBuilder builder, DialogToken inputToken, [NotNull]string tokenName)
+				: base(builder, inputToken, tokenName)
 			{
 			}
 			public IPartnerDialogToken SetCondition(ConversationSentence.OnConditionDelegate condition)
@@ -238,7 +238,12 @@ namespace PreventEscape
 			}
 			public override void CompileToken(CampaignGameStarter campaign)
 			{
-				campaign.AddDialogLine(TokenName, InputToken?.TokenName ?? "start", OutputToken, GetText() + Expressions?.Tag, Condition, Consequence, Priority);
+				var inputToken = InputToken?.TokenName ?? "start";
+				if (InputToken is IBarterResultToken)
+					inputToken += "_result";
+				if (InputToken is IInputDialogToken)
+					inputToken = InputToken.TokenName;
+				campaign.AddDialogLine(TokenName, inputToken, OutputToken, GetText() + Expressions?.Tag, Condition, Consequence, Priority);
 			}
 		}
 
@@ -266,13 +271,13 @@ namespace PreventEscape
 			public IPartnerDialogToken Response(string tokenName)
 			{
 				var result = new PartnerDialogToken(Builder, this, tokenName);
-				OutputToken = result.TokenName;
+				//OutputToken = result.TokenName;
 				return result;
 			}
 			public IBarterResultToken Barter(AcquireBarterablesCallback acquireBarterables)
 			{
 				var result = new BarterResultToken(Builder, this, acquireBarterables);
-				OutputToken = result.TokenName;
+				OutputToken += "_barter";
 				return result;
 			}
 			public IPartnerDialogToken End()
@@ -379,7 +384,7 @@ namespace PreventEscape
 			public override void CompileToken(CampaignGameStarter campaign)
 			{
 				_context.AdditionalConsequence = Consequence;
-				campaign.AddDialogLine(TokenName, InputToken?.TokenName ?? "start", TokenName, "" + Expressions?.Tag, Condition, _context.Consequence);
+				campaign.AddDialogLine(TokenName, InputToken?.TokenName + "_barter", TokenName+"_result", "" + Expressions?.Tag, Condition, _context.Consequence);
 			}
 		}
 
@@ -457,6 +462,7 @@ namespace PreventEscape
 			{
 				dialogToken.CompileToken(_campaignGameStarter);
 			}
+			_tokens.Clear();
 		}
 	}
 

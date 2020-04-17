@@ -27,6 +27,10 @@ namespace PreventEscape.Barterables
 		}
 		public override int GetUnitValueForFaction(IFaction faction)
 		{
+			if ((_ransompayer?.IsFactionLeader ?? false) && (OriginalOwner?.MapFaction == _ransompayer.MapFaction))
+				return 0;
+			if (OriginalOwner?.MapFaction == _ransompayer?.MapFaction)
+				return 0;
 			return HeroEvaluator.Evaluate(_prisonerCharacter, OriginalOwner, _ransompayer, faction);
 		}
 		public override string GetEncyclopediaLink()
