@@ -32,6 +32,7 @@ namespace PreventEscape
 		public int RansomRelationImprovement = 10;
 		public int RansomRejectRelationDeterioration = 2;
 		public int RansomRejectBarterRelationDeterioration = 1;
+		public int CaptivityDaysLimit = CampaignTime.DaysInYear;
 		public ConversationContext PrisonerBarterConversationContext = (ConversationContext)6;
 
 		public Settings()
@@ -86,6 +87,8 @@ namespace PreventEscape
 							RansomRejectRelationDeterioration = 2;
 						if (!int.TryParse(mainNode["RansomRejectBarterRelationDeterioration"]?.InnerText ?? "", out RansomRejectBarterRelationDeterioration))
 							RansomRejectBarterRelationDeterioration = 1;
+						if (!int.TryParse(mainNode["CaptivityDaysLimit"]?.InnerText ?? "", out CaptivityDaysLimit))
+							CaptivityDaysLimit = CampaignTime.DaysInYear;
 						if (!int.TryParse(mainNode["PrisonerBarterConversationContextId"]?.InnerText ?? "", out var iValue) ||
 							PrisonerBarterConversationContext < 0)
 							PrisonerBarterConversationContext = (ConversationContext)6;

@@ -8,7 +8,7 @@ namespace PreventEscape
 	{
 		public static int Evaluate(Hero prisoner, Hero captor, Hero ransomer, IFaction evaluatorFaction)
 		{
-			if (prisoner == null || ransomer == null || evaluatorFaction == null)
+			if (prisoner == null || ransomer == null || evaluatorFaction == null || Campaign.Current == null)
 				return 0;
 
 			var estimatedValue = (prisoner.Clan?.TotalStrength * Settings.Instance.StrengthFactor ?? 0)
@@ -22,6 +22,21 @@ namespace PreventEscape
 					estimatedValue *= Settings.Instance.FactionLeaderFactor;
 			else
 				estimatedValue *= Settings.Instance.OtherFactor;
+			var clanGoldChange = Math.Max(0, Campaign.Current.Models?.ClanFinanceModel?.CalculateClanGoldChange(prisoner.Clan, null, true) ?? 0);
+			var clanGold = 0;
+			if (prisoner.Clan?.Heroes != null)
+			{
+				if (prisoner.Clan.Leader == prisoner)
+					foreach (var hero in prisoner.Clan.Heroes)
+						clanGold += hero.Gold;
+				else
+					clanGold = prisoner.Clan.Leader?.Gold ?? 0;
+			}
+
+			// Limit ransom price, so it's not greater than clan could pay.
+			var maxRansom = Math.Max(clanGold, clanGoldChange * Settings.Instance.PriceAgreementDelay * 0.8f);
+			if (estimatedValue > maxRansom)
+				estimatedValue = maxRansom;
 			if ((prisoner.PartyBelongedToAsPrisoner?.MapFaction?.IsBanditFaction ?? true) || evaluatorFaction.IsBanditFaction)
 			{
 				if (!evaluatorFaction.IsBanditFaction)
