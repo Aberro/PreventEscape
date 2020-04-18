@@ -18,7 +18,6 @@ This mod overrides default escape mechanic, significantly reducing nobles chance
 ### THANKS TO:
 SkarlathAmon for text cleanup
 ### KNOWN ISSUES:
-* In early game, AI nor player have enough money for ransom
 ### PLANNED FEATURES:
 * Dialogue and barter with prisoners (planned in next major update, version 1.3)
 * Additional conditions of prisoner release, i.e. forbid to attack player for set amount of time, lord defection (though, not to player's faction but as independent clan, but that's becomes possible after release), maybe other.
