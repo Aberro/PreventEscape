@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
-using BannerLib.Misc;
 using JetBrains.Annotations;
 using PreventEscape.Barterables;
 using TaleWorlds.CampaignSystem;
@@ -288,8 +287,10 @@ namespace PreventEscape.CampaignBehaviors
 		{
 			if (prisoner == null || ransomPayer == null || BarterManager.Instance == null)
 				return false;
-			if (ransomPayer == Hero.MainHero)
+			if (ransomPayer == Hero.MainHero || captor == Hero.MainHero)
 			{
+				if (captor == Hero.MainHero && (prisoner.MapFaction?.IsAtWarWith(Hero.MainHero?.MapFaction) ?? false))
+					return false;
 				var conversation = new Conversation()
 				{
 					Prisoner = prisoner,
@@ -311,11 +312,14 @@ namespace PreventEscape.CampaignBehaviors
 			barterable = new GoldBarterable(ransomPayer, captor, ransomPayerParty, captorParty, ransomPayer.Gold);
 			barterData.AddBarterable<DefaultsBarterGroup>(barterable, true);
 			if ((captor?.IsFactionLeader ?? false) && captor.MapFaction == Hero.MainHero?.MapFaction
-												   && ((prisoner.PartyBelongedTo?.Party?.IsSettlement ?? false) && prisoner.PartyBelongedTo.Party.Settlement?.OwnerClan?.Leader == Hero.MainHero
-												   || (prisoner.PartyBelongedTo?.Party?.IsMobile ?? false) && prisoner.PartyBelongedTo.LeaderHero == Hero.MainHero))
-				InquiryBuilder.Create("Your lord's order.")
-					?.WithDescription($"Your lord, {captor.Name}, orders you to release one of your prisoners, {prisoner.Name}!")
-					?.BuildAndPublish(true);
+			                                       && ((prisoner.PartyBelongedTo?.Party?.IsSettlement ?? false) &&
+			                                           prisoner.PartyBelongedTo.Party.Settlement?.OwnerClan?.Leader == Hero.MainHero
+			                                           || (prisoner.PartyBelongedTo?.Party?.IsMobile ?? false) &&
+			                                           prisoner.PartyBelongedTo.LeaderHero == Hero.MainHero))
+				InformationManager.ShowInquiry(
+					new InquiryData("Your lord's order.", $"Your lord, {captor.Name}, orders you to release one of your prisoners, {prisoner.Name}!",
+						false, false, null, null, null, null), true);
+
 			if (prisoner.PartyBelongedToAsPrisoner?.MapFaction?.IsBanditFaction ?? true)
 			{
 				ransomPayer.ChangeHeroGold(price);
@@ -370,7 +374,7 @@ namespace PreventEscape.CampaignBehaviors
 				titleText = "A prisoner asks for your audience.";
 				descriptionText = $"{prisoner.Name} from {prisoner.MapFaction?.Name} has sent you a message asking for your audience. Would you like to speak with him?";
 			}
-			else if (ransomPayer == Hero.MainHero && captorParty != null && (captorParty.MapFaction?.IsBanditFaction == false))
+			else if (ransomPayer == Hero.MainHero && captorParty != null && (captorParty.MapFaction?.IsBanditFaction ?? true))
 			{
 				titleText = "Ransom offering";
 				descriptionText = $"Bandit leader has sent you a message offering to ransom {_subjectPrisoner.Name} from {(_subjectPrisoner.Clan == Clan.PlayerClan ? "your clan" : _subjectPrisoner.Clan?.FullName?.ToString())}.";
@@ -388,10 +392,8 @@ namespace PreventEscape.CampaignBehaviors
 				return;
 			}
 
-			InquiryBuilder
-				.Create(titleText)
-				?.WithDescription(descriptionText)
-				?.WithAffirmative("Accept", () =>
+			InformationManager.ShowInquiry(new InquiryData(titleText, descriptionText, true, true, "Accept", "Decline",
+				() =>
 				{
 					if (Campaign.Current == null)
 					{
@@ -419,16 +421,19 @@ namespace PreventEscape.CampaignBehaviors
 							return;
 						}
 					}
+
 					conversation.SetBarterResult(false);
-				})?.WithNegative("Decline", () =>
+				}, () =>
 				{
-					if(_subjectPrisoner != ransomPayer && ransomPayer != Hero.MainHero)
-						ChangeRelationAction.ApplyRelationChangeBetweenHeroes(ransomPayer, Hero.MainHero, -Settings.Instance.RansomRejectRelationDeterioration);
-					if(_subjectPrisoner != Hero.MainHero)
-						ChangeRelationAction.ApplyRelationChangeBetweenHeroes(_subjectPrisoner, Hero.MainHero, -Settings.Instance.RansomRejectRelationDeterioration);
+					if (_subjectPrisoner != ransomPayer && ransomPayer != Hero.MainHero)
+						ChangeRelationAction.ApplyRelationChangeBetweenHeroes(ransomPayer, Hero.MainHero,
+							-Settings.Instance.RansomRejectRelationDeterioration);
+					if (_subjectPrisoner != Hero.MainHero)
+						ChangeRelationAction.ApplyRelationChangeBetweenHeroes(_subjectPrisoner, Hero.MainHero,
+							-Settings.Instance.RansomRejectRelationDeterioration);
 					conversation.SetBarterResult(false);
 					PlayNextConversation();
-				})?.BuildAndPublish(true);
+				}), true);
 		}
 		private void AddDialogs(CampaignGameStarter campaignGameStarter)
 		{

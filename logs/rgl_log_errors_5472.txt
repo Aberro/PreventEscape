@@ -1,0 +1,34 @@
+Starting new log file...
+06 Apr 2020 Monday 18:53 Central European Daylight Time
+Computer: BAZYL-PC User: Bazyl
+Build Version: 223831
+
+<##########################################################################################>
+
+#kernelbase.pdb@{B4560FC25D854BD5A2F73DC9FED50F99} (2): 0:47229
+#clr.pdb@{D7C78ABFD9684115928D6BB4C3E49575} (2): 0:1146554
+#clr.pdb@{D7C78ABFD9684115928D6BB4C3E49575} (2): 0:4467075
+#clr.pdb@{D7C78ABFD9684115928D6BB4C3E49575} (2): 0:3806519
+#mscorlib.pdb@{71C102453C344F348D4133088A12776E} (2): 0:5115361
+#mscorlib.pdb@{71C102453C344F348D4133088A12776E} (2): 0:4903100
+#mscorlib.pdb@{71C102453C344F348D4133088A12776E} (2): 0:4829172
+@unknown_module@unknown_source (unknown_line): unknown_function
+@unknown_module@unknown_source (unknown_line): unknown_function
+@unknown_module@unknown_source (unknown_line): unknown_function
+@unknown_module@unknown_source (unknown_line): unknown_function
+#clr.pdb@{D7C78ABFD9684115928D6BB4C3E49575} (2): 0:8718
+#Game.pdb@{6839BD707AA345F6AFFDF7549A31BB40} (1): 0:1255430
+#FairyTale.DotNet.pdb@{9E59A8EDE7564999B8A67DCFFBE4B14E} (1): 0:21376
+#Rgl.pdb@{86C73375158640B8996F7933801BED17} (1): 0:4510717
+#Rgl.pdb@{86C73375158640B8996F7933801BED17} (1): 0:4496801
+#Rgl.pdb@{86C73375158640B8996F7933801BED17} (1): 0:4263729
+#Rgl.pdb@{86C73375158640B8996F7933801BED17} (1): 0:4263496
+#Rgl.pdb@{86C73375158640B8996F7933801BED17} (1): 0:4266839
+#ucrtbase.pdb@{C3DD2C823498457082399DB3EC47FBAC} (1): 0:128160
+#kernel32.pdb@{FEEA79F55E624E1DA0F353BE5475022C} (2): 0:87405
+#ntdll.pdb@{0A682A2081CD49B19C5CB94160307438} (1): 0:341805
+-----------------------------------------------
+No managed frames available.
+
+
+Dump generation canceled by the user.

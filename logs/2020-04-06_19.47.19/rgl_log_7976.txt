@@ -1,0 +1,674 @@
+Starting new log file...
+06 Apr 2020 Monday 19:45 Central European Daylight Time
+Computer: BAZYL-PC User: Bazyl
+Build Version: 223831
+Command Args: /singleplayer _MODULES_*Native*SandBoxCore*CustomBattle*Sandbox*StoryMode*PreventEscape*_MODULES_ /anticheat
+try_to_get_cache_save_privilege result : 1
+Loading xml file: $BASE/Modules/Native/ModuleData/project.mbproj.
+reading sound_files xml files
+file: ModuleData/soundfiles.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/soundfiles.xml.
+rglShader_manager::read_compressed_shader_cache_package : 0.567864
+reading sound_files xml files
+file: ModuleData/soundfiles.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/soundfiles.xml.
+Loading xml file: $BASE/Modules/Sandbox/ModuleData/project.mbproj.
+reading sound_files xml files
+reading sound_files xml files
+Loading xml file: $BASE/Modules/StoryMode/ModuleData/project.mbproj.
+reading sound_files xml files
+reading sound_files xml files
+Loading xml file: $BASE/Modules/Native/ModuleData/project.mbproj.
+reading physics_material xml files
+file: ModuleData/physics_materials.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/physics_materials.xml.
+Loading xml file: $BASE/Modules/Sandbox/ModuleData/project.mbproj.
+reading physics_material xml files
+Loading xml file: $BASE/Modules/StoryMode/ModuleData/project.mbproj.
+reading physics_material xml files
+Loading xml file: $BASE/Modules/Native/ModuleData/project.mbproj.
+reading physics_material xml files
+file: ModuleData/physics_materials.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/physics_materials.xml.
+Loading xml file: $BASE/Modules/Sandbox/ModuleData/project.mbproj.
+reading physics_material xml files
+Loading xml file: $BASE/Modules/StoryMode/ModuleData/project.mbproj.
+reading physics_material xml files
+Selected graphics adapter: [0] AMD Radeon HD 7800 Series
+Loading xml file: $BASE/Modules/Native/TileSets/ValidMaterials.xml.
+Loading packages ...
+Packages Loaded in : 4.490982
+Registering items...
+Unable to find item to add dependency(depender empire_helmet_a)
+Unable to find item to add dependency(depender plated_leather_armor_a)
+Unable to find item to add dependency(depender plated_leather_armor_b)
+Unable to find item to add dependency(depender plated_leather_armor_b_converted_slim)
+Unable to find item to add dependency(depender plated_leather_armor_b_converted_slim)
+Unable to find item to add dependency(depender plated_leather_armor_a_converted_slim)
+Unable to find item to add dependency(depender plated_leather_armor_a_converted_slim)
+Unable to find item to add dependency(depender plated_leather_armor_a_slim)
+Unable to find item to add dependency(depender plated_leather_armor_a_slim)
+Unable to find item to add dependency(depender plated_leather_armor_b_converted)
+Unable to find item to add dependency(depender plated_leather_armor_b_converted)
+Unable to find item to add dependency(depender plated_leather_armor_a_converted)
+Unable to find item to add dependency(depender plated_leather_armor_a_converted)
+Unable to find item to add dependency(depender plated_leather_armor_b_slim)
+Unable to find item to add dependency(depender plated_leather_armor_b_slim)
+Unable to find item to add dependency(depender burlap_sack_dress_converted)
+Unable to find item to add dependency(depender burlap_sack_dress_converted)
+Unable to find item to add dependency(depender burlap_sack_dress_converted_slim)
+Unable to find item to add dependency(depender burlap_sack_dress_converted_slim)
+Unable to find item to add dependency(depender burlap_sack_dress_slim)
+Unable to find item to add dependency(depender burlap_sack_dress_slim)
+Unable to find item to add dependency(depender burlap_sack_dress)
+Unable to find item to add dependency(depender horse_harness_aserai_d)
+Unable to find item to add dependency(depender horse_harness_imperial_b_clotest)
+Initializing items
+Packages Registered in : 5.049148
+Loading done...
+Loading xml file: $BASE/Data/font_data.xml.
+Validating all resources in loading queue...
+validate_all_resources_in_loading_queue finished
+rglResource_manager::validate_all_resources_in_loading_queue() : 0.000010
+Validating all resources in loading queue...
+validate_all_resources_in_loading_queue finished
+rglResource_manager::validate_all_resources_in_loading_queue() : 0.000010
+Loading xml file: $BASE/Modules/Native/ModuleData/project.mbproj.
+rglFile_manager::shrink_memory: shrink 32 of 32 buffers, released 11302983 bytes
+--------------Mono Loading Step::on_managed_interface_init--------------
+--------------Mono Loading Step::managed_interface_init--------------
+reading face_animation_record xml files
+file: ModuleData/voices.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/voices.xml.
+Loading xml file: $BASE/Modules/Native/ModuleData/project.mbproj.
+reading postfx xml files
+file: ModuleData/postfx_graphs.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/postfx_graphs.xml.
+Loading xml file: $BASE/Modules/Native/ModuleData/flora_kinds.xml.
+Loading xml file: $BASE/Modules/Sandbox/ModuleData/project.mbproj.
+reading face_animation_record xml files
+Loading xml file: $BASE/Modules/StoryMode/ModuleData/project.mbproj.
+reading face_animation_record xml files
+Loading xml file: $BASE/Modules/Native/ModuleData/project.mbproj.
+reading decal_set xml files
+file: ModuleData/decal_sets.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/decal_sets.xml.
+Loading xml file: $BASE/Modules/Sandbox/ModuleData/project.mbproj.
+reading decal_set xml files
+Loading xml file: $BASE/Modules/StoryMode/ModuleData/project.mbproj.
+reading decal_set xml files
+Loading xml file: $BASE/Modules/Native/ModuleData/project.mbproj.
+reading decal_texture xml files
+file: ModuleData/decal_textures.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/decal_textures.xml.
+Loading xml file: $BASE/Modules/Sandbox/ModuleData/project.mbproj.
+reading decal_texture xml files
+Loading xml file: $BASE/Modules/StoryMode/ModuleData/project.mbproj.
+reading decal_texture xml files
+Loading xml file: $BASE/Modules/Native/ModuleData/project.mbproj.
+reading skinned_decals xml files
+file: ModuleData/skinned_decals.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/skinned_decals.xml.
+file: ModuleData/before_transparents_graph.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/before_transparents_graph.xml.
+Loading xml file: $BASE/Modules/Sandbox/ModuleData/project.mbproj.
+reading skinned_decals xml files
+Loading xml file: $BASE/Modules/StoryMode/ModuleData/project.mbproj.
+reading skinned_decals xml files
+Loading xml file: $BASE/Modules/Native/ModuleData/cloth_materials.xml.
+file: ModuleData/thumbnail_postfx_graphs.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/thumbnail_postfx_graphs.xml.
+file: ModuleData/prerender.xml
+Loading xml file: $BASE/Modules/Native/ModuleData/prerender.xml.
+Loading xml file: $BASE/Modules/Native/ModuleData/cloth_bodies.xml.
+Flora "wheats_green" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "wheats_yellow" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "wheat_stalk" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "lod_tester" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "lod_tester_fading_out" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "lod_tester_body" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "lod_tester_fading_out_body" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "plant_desert_bush_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "plant_desert_bush_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "plant_desert_bush_c" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "plant_desert_bush_d" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "plant_desert_bush_e" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant__mix" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_c" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_d" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_e" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_g" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_h" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_i" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_j" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_l" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_plant_k" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant__mix_grass" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant__mix_long" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant__mix_big_volume" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_c" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_d" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_e" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_g" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_h" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_i" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_j" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_k" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_l" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_m" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_n" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_o" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_p" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_dry_plant_q" is not set 'align_with_slope' before 'point_up', adding automatically...
+Loading xml file: $BASE/Modules/Native/ModuleData/special_meshes.xml.
+Flora "flora_green__mix" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_sturgiaGreen_mix" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green__mix_flower" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "free_flora_green__mix_flower" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green__mix_big_leafs" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "shrub__mix" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_c" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_d" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_e" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_f" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_g" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_h" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_i" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_j" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_green_k" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "valley_ground_rock_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "desert_bones" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "artemis_white" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "artemis_yellow" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "papaver" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "valley_plant_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "valley_plant_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "valley_plant_b_only" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "valley_plant_c" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "valley_plant_d" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "valley_flower__mix" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "free_valley_flower__mix" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "pine_seeds" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "rock_new_yellow" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "rock_new_green" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "agriculture_carrot" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "agriculture_chickpeas" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "agriculture_favabeans" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "agriculture_garlic" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "agriculture_leek" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "agriculture_parsnip" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow__mix" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_sturgiaSnow_mix" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_c" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_d" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_e" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_f" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_g" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_h" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_i" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_j" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_k" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_l" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_m" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_n" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_o" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_p" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_s" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_t" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_y" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_z" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_reed_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_reed_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_reed_c" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_reed_d" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_reed_e" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_reed_f" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_terrain_drygrass" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_dry_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "flora_snow_dry_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "wheats_aa" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "wheats_bb" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "snow_tree_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "snow_tree_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "snow_tree_c" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "desert_tree_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "desert_tree_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "desert_tree_c" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "desert_tree_d" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "map_billboard_plain_b01" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "map_billboard_steppe_a" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "map_billboard_steppe_b" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "map_billboard_steppe_c" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "map_billboard_steppe_d" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "map_billboard_plain_p01" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "pumpkin_plant" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "wheat_group_spring" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "wheat_group_summer" is not set 'align_with_slope' before 'point_up', adding automatically...
+Flora "wheat_group_fall" is not set 'align_with_slope' before 'point_up', adding automatically...
+Loading xml file: $BASE/Modules/Sandbox/ModuleData/project.mbproj.
+reading postfx xml files
+Loading xml file: $BASE/Modules/StoryMode/ModuleData/project.mbproj.
+reading postfx xml files
+Loading xml file: $BASE/Modules/Native/ModuleData/flora_groups.xml.
+Loading xml file: $BASE/Modules/Native/ModuleData/flora_groups.xml.
+[19:46:46.6593522] Creating module... 
+[19:46:46.6673527] opening ../../Modules/Native/ModuleData/global_strings.xml 
+[19:46:46.6893539] loading strings.xml: 
+[19:46:46.6983545] opening ../../Modules/Native/ModuleData/Languages\std_crafting_pieces_xml.xml 
+[19:46:46.7213558] Loading localized text xml. 
+[19:46:46.7223558] opening ../../Modules/Native/ModuleData/Languages\std_global_strings_xml.xml 
+[19:46:46.7383567] Loading localized text xml. 
+[19:46:46.7393568] opening ../../Modules/Native/ModuleData/Languages\std_info_pages_xml.xml 
+[19:46:46.7483573] Loading localized text xml. 
+[19:46:46.7483573] opening ../../Modules/Native/ModuleData/Languages\std_item_modifiers_xml.xml 
+[19:46:46.7713586] Loading localized text xml. 
+[19:46:46.7713586] opening ../../Modules/Native/ModuleData/Languages\std_module_strings_xml.xml 
+[19:46:46.7923598] Loading localized text xml. 
+[19:46:46.7963601] opening ../../Modules/Native/ModuleData/Languages\std_mpbadges_xml.xml 
+[19:46:46.8173613] Loading localized text xml. 
+[19:46:46.8173613] opening ../../Modules/Native/ModuleData/Languages\std_mpcharacters_xml.xml 
+[19:46:46.8333622] Loading localized text xml. 
+[19:46:46.8333622] opening ../../Modules/Native/ModuleData/Languages\std_mpclassdivisions_xml.xml 
+[19:46:46.8403626] Loading localized text xml. 
+[19:46:46.8403626] opening ../../Modules/Native/ModuleData/Languages\std_mpcultures_xml.xml 
+[19:46:46.8533633] Loading localized text xml. 
+[19:46:46.8533633] opening ../../Modules/Native/ModuleData/Languages\std_mpitems_xml.xml 
+[19:46:46.8703643] Loading localized text xml. 
+[19:46:46.8703643] opening ../../Modules/Native/ModuleData/Languages\std_multiplayer_strings_xml.xml 
+[19:46:46.8803649] Loading localized text xml. 
+[19:46:46.8803649] opening ../../Modules/Native/ModuleData/Languages\std_native_strings_xml.xml 
+[19:46:46.8883653] Loading localized text xml. 
+[19:46:46.8893654] opening ../../Modules/Native/ModuleData/Languages\std_TaleWorlds_Core.xml 
+[19:46:46.9083665] Loading localized text xml. 
+[19:46:46.9083665] opening ../../Modules/Native/ModuleData/Languages\std_TaleWorlds_MountAndBlade.xml 
+[19:46:46.9233673] Loading localized text xml. 
+[19:46:46.9233673] opening ../../Modules/Native/ModuleData/Languages\std_TaleWorlds_MountAndBlade_Diamond_Server.xml 
+[19:46:46.9293677] Loading localized text xml. 
+[19:46:46.9293677] opening ../../Modules/Native/ModuleData/Languages\std_TaleWorlds_MountAndBlade_GauntletUI.xml 
+[19:46:46.9543691] Loading localized text xml. 
+[19:46:46.9543691] opening ../../Modules/Native/ModuleData/Languages\std_TaleWorlds_MountAndBlade_View.xml 
+[19:46:46.9603694] Loading localized text xml. 
+[19:46:46.9603694] opening ../../Modules/Native/ModuleData/Languages\std_TaleWorlds_MountAndBlade_ViewModelCollection.xml 
+[19:46:46.9783705] Loading localized text xml. 
+[19:46:46.9783705] opening ../../Modules/Native/ModuleData/Languages\CNs\std_crafting_pieces_xml-zho-CN.xml 
+[19:46:46.9983716] Loading localized text xml. 
+[19:46:46.9983716] opening ../../Modules/Native/ModuleData/Languages\CNs\std_global_strings_xml-zho-CN.xml 
+[19:46:47.0223730] Loading localized text xml. 
+[19:46:47.0223730] opening ../../Modules/Native/ModuleData/Languages\CNs\std_info_pages_xml-zho-CN.xml 
+[19:46:47.0373738] Loading localized text xml. 
+[19:46:47.0373738] opening ../../Modules/Native/ModuleData/Languages\CNs\std_item_modifiers_xml-zho-CN.xml 
+[19:46:47.0493745] Loading localized text xml. 
+[19:46:47.0503746] opening ../../Modules/Native/ModuleData/Languages\CNs\std_module_strings_xml-zho-CN.xml 
+[19:46:47.0693757] Loading localized text xml. 
+[19:46:47.0693757] opening ../../Modules/Native/ModuleData/Languages\CNs\std_mpbadges_xml-zho-CN.xml 
+[19:46:47.0763761] Loading localized text xml. 
+[19:46:47.0763761] opening ../../Modules/Native/ModuleData/Languages\CNs\std_mpcharacters_xml-zho-CN.xml 
+[19:46:47.0833765] Loading localized text xml. 
+[19:46:47.0833765] opening ../../Modules/Native/ModuleData/Languages\CNs\std_mpclassdivisions_xml-zho-CN.xml 
+[19:46:47.0943771] Loading localized text xml. 
+[19:46:47.0943771] opening ../../Modules/Native/ModuleData/Languages\CNs\std_mpcultures_xml-zho-CN.xml 
+[19:46:47.1043777] Loading localized text xml. 
+[19:46:47.1043777] opening ../../Modules/Native/ModuleData/Languages\CNs\std_mpitems_xml-zho-CN.xml 
+[19:46:47.1153783] Loading localized text xml. 
+[19:46:47.1153783] opening ../../Modules/Native/ModuleData/Languages\CNs\std_multiplayer_strings_xml-zho-CN.xml 
+[19:46:47.1293791] Loading localized text xml. 
+[19:46:47.1293791] opening ../../Modules/Native/ModuleData/Languages\CNs\std_native_strings_xml-zho-CN.xml 
+[19:46:47.1363795] Loading localized text xml. 
+[19:46:47.1373796] opening ../../Modules/Native/ModuleData/Languages\CNs\std_TaleWorlds_Core-zho-CN.xml 
+[19:46:47.1543805] Loading localized text xml. 
+[19:46:47.1543805] opening ../../Modules/Native/ModuleData/Languages\CNs\std_TaleWorlds_MountAndBlade-zho-CN.xml 
+[19:46:47.1723816] Loading localized text xml. 
+[19:46:47.1723816] opening ../../Modules/Native/ModuleData/Languages\CNs\std_TaleWorlds_MountAndBlade_Diamond_Server-zho-CN.xml 
+[19:46:47.1733816] Loading localized text xml. 
+[19:46:47.1733816] opening ../../Modules/Native/ModuleData/Languages\CNs\std_TaleWorlds_MountAndBlade_GauntletUI-zho-CN.xml 
+[19:46:47.1743817] Loading localized text xml. 
+[19:46:47.1743817] opening ../../Modules/Native/ModuleData/Languages\CNs\std_TaleWorlds_MountAndBlade_View-zho-CN.xml 
+[19:46:47.1823821] Loading localized text xml. 
+[19:46:47.1823821] opening ../../Modules/Native/ModuleData/Languages\CNs\std_TaleWorlds_MountAndBlade_ViewModelCollection-zho-CN.xml 
+[19:46:47.1903826] Loading localized text xml. 
+[19:46:47.1903826] opening ../../Modules/Native/ModuleData/Languages\TR\std_crafting_pieces_xml_tr.xml 
+[19:46:47.2153840] Loading localized text xml. 
+[19:46:47.2163841] opening ../../Modules/Native/ModuleData/Languages\TR\std_global_strings_xml.xml 
+[19:46:47.2303849] Loading localized text xml. 
+[19:46:47.2303849] opening ../../Modules/Native/ModuleData/Languages\TR\std_info_pages_xml_tr.xml 
+[19:46:47.2493860] Loading localized text xml. 
+[19:46:47.2493860] opening ../../Modules/Native/ModuleData/Languages\TR\std_item_modifiers_xml.xml 
+[19:46:47.2643868] Loading localized text xml. 
+[19:46:47.2643868] opening ../../Modules/Native/ModuleData/Languages\TR\std_module_strings_xml_tr.xml 
+[19:46:47.2903883] Loading localized text xml. 
+[19:46:47.2903883] opening ../../Modules/Native/ModuleData/Languages\TR\std_mpbadges_xml.xml 
+[19:46:47.3083893] Loading localized text xml. 
+[19:46:47.3083893] opening ../../Modules/Native/ModuleData/Languages\TR\std_mpcharacters_xml.xml 
+[19:46:47.3113895] Loading localized text xml. 
+[19:46:47.3113895] opening ../../Modules/Native/ModuleData/Languages\TR\std_mpclassdivisions_xml.xml 
+[19:46:47.3243903] Loading localized text xml. 
+[19:46:47.3243903] opening ../../Modules/Native/ModuleData/Languages\TR\std_mpcultures_xml.xml 
+[19:46:47.3503917] Loading localized text xml. 
+[19:46:47.3503917] opening ../../Modules/Native/ModuleData/Languages\TR\std_mpitems_xml.xml 
+[19:46:47.3753932] Loading localized text xml. 
+[19:46:47.3753932] opening ../../Modules/Native/ModuleData/Languages\TR\std_multiplayer_strings_xml.xml 
+[19:46:47.3893940] Loading localized text xml. 
+[19:46:47.3893940] opening ../../Modules/Native/ModuleData/Languages\TR\std_native_strings_xml.xml 
+[19:46:47.3973944] Loading localized text xml. 
+[19:46:47.3973944] opening ../../Modules/Native/ModuleData/Languages\TR\std_TaleWorlds_Core.xml 
+[19:46:47.4073950] Loading localized text xml. 
+[19:46:47.4073950] opening ../../Modules/Native/ModuleData/Languages\TR\std_TaleWorlds_MountAndBlade.xml 
+[19:46:47.4203957] Loading localized text xml. 
+[19:46:47.4203957] opening ../../Modules/Native/ModuleData/Languages\TR\std_TaleWorlds_MountAndBlade_Diamond_Server.xml 
+[19:46:47.4213958] Loading localized text xml. 
+[19:46:47.4213958] opening ../../Modules/Native/ModuleData/Languages\TR\std_TaleWorlds_MountAndBlade_GauntletUI.xml 
+[19:46:47.4333965] Loading localized text xml. 
+[19:46:47.4333965] opening ../../Modules/Native/ModuleData/Languages\TR\std_TaleWorlds_MountAndBlade_View.xml 
+[19:46:47.4563978] Loading localized text xml. 
+[19:46:47.4563978] opening ../../Modules/Native/ModuleData/Languages\TR\std_TaleWorlds_MountAndBlade_ViewModelCollection.xml 
+[19:46:47.4803992] Loading localized text xml. 
+[19:46:47.4813992] opening ../../Modules/SandBox/ModuleData/Languages\std_action_strings_xml.xml 
+[19:46:47.5004003] Loading localized text xml. 
+[19:46:47.5004003] opening ../../Modules/SandBox/ModuleData/Languages\std_bandits_xml.xml 
+[19:46:47.5244017] Loading localized text xml. 
+[19:46:47.5244017] opening ../../Modules/SandBox/ModuleData/Languages\std_caravans_xml.xml 
+[19:46:47.5344023] Loading localized text xml. 
+[19:46:47.5344023] opening ../../Modules/SandBox/ModuleData/Languages\std_comment_on_action_strings_xml.xml 
+[19:46:47.5474030] Loading localized text xml. 
+[19:46:47.5474030] opening ../../Modules/SandBox/ModuleData/Languages\std_comment_strings_xml.xml 
+[19:46:47.5664041] Loading localized text xml. 
+[19:46:47.5674042] opening ../../Modules/SandBox/ModuleData/Languages\std_companions_xml.xml 
+[19:46:47.5804049] Loading localized text xml. 
+[19:46:47.5804049] opening ../../Modules/SandBox/ModuleData/Languages\std_companion_strings_xml.xml 
+[19:46:47.5894054] Loading localized text xml. 
+[19:46:47.5894054] opening ../../Modules/SandBox/ModuleData/Languages\std_concept_strings_xml.xml 
+[19:46:47.6104066] Loading localized text xml. 
+[19:46:47.6104066] opening ../../Modules/SandBox/ModuleData/Languages\std_conversations_xml.xml 
+[19:46:47.6424084] Loading localized text xml. 
+[19:46:47.6434085] opening ../../Modules/SandBox/ModuleData/Languages\std_game_menus_xml.xml 
+[19:46:47.6684099] Loading localized text xml. 
+[19:46:47.6684099] opening ../../Modules/SandBox/ModuleData/Languages\std_heroes_xml.xml 
+[19:46:47.6854109] Loading localized text xml. 
+[19:46:47.6854109] opening ../../Modules/SandBox/ModuleData/Languages\std_location_complex_templates_xml.xml 
+[19:46:47.7094123] Loading localized text xml. 
+[19:46:47.7104123] opening ../../Modules/SandBox/ModuleData/Languages\std_lords_xml.xml 
+[19:46:47.7174127] Loading localized text xml. 
+[19:46:47.7174127] opening ../../Modules/SandBox/ModuleData/Languages\std_lord_conversations_xml.xml 
+[19:46:47.7304135] Loading localized text xml. 
+[19:46:47.7304135] opening ../../Modules/SandBox/ModuleData/Languages\std_minor_faction_conversations_xml.xml 
+[19:46:47.7384139] Loading localized text xml. 
+[19:46:47.7384139] opening ../../Modules/SandBox/ModuleData/Languages\std_module_strings_xml.xml 
+[19:46:47.7574150] Loading localized text xml. 
+[19:46:47.7574150] opening ../../Modules/SandBox/ModuleData/Languages\std_SandBox.xml 
+[19:46:47.7794163] Loading localized text xml. 
+[19:46:47.7794163] opening ../../Modules/SandBox/ModuleData/Languages\std_SandBox_GauntletUI.xml 
+[19:46:47.7804163] Loading localized text xml. 
+[19:46:47.7804163] opening ../../Modules/SandBox/ModuleData/Languages\std_SandBox_View.xml 
+[19:46:47.7814164] Loading localized text xml. 
+[19:46:47.7814164] opening ../../Modules/SandBox/ModuleData/Languages\std_SandBox_ViewModelCollection.xml 
+[19:46:47.7824165] Loading localized text xml. 
+[19:46:47.7824165] opening ../../Modules/SandBox/ModuleData/Languages\std_settlements_xml.xml 
+[19:46:47.8074179] Loading localized text xml. 
+[19:46:47.8084179] opening ../../Modules/SandBox/ModuleData/Languages\std_spclans_xml.xml 
+[19:46:47.8334194] Loading localized text xml. 
+[19:46:47.8334194] opening ../../Modules/SandBox/ModuleData/Languages\std_spkingdoms_xml.xml 
+[19:46:47.8594209] Loading localized text xml. 
+[19:46:47.8594209] opening ../../Modules/SandBox/ModuleData/Languages\std_spprojects_xml.xml 
+[19:46:47.8794220] Loading localized text xml. 
+[19:46:47.8804221] opening ../../Modules/SandBox/ModuleData/Languages\std_spspecialcharacters_xml.xml 
+[19:46:47.8964230] Loading localized text xml. 
+[19:46:47.8964230] opening ../../Modules/SandBox/ModuleData/Languages\std_spworkshops_xml.xml 
+[19:46:47.9034234] Loading localized text xml. 
+[19:46:47.9034234] opening ../../Modules/SandBox/ModuleData/Languages\std_StoryMode.xml 
+[19:46:47.9234245] Loading localized text xml. 
+[19:46:47.9244246] opening ../../Modules/SandBox/ModuleData/Languages\std_StoryMode_GauntletUI.xml 
+[19:46:47.9304249] Loading localized text xml. 
+[19:46:47.9304249] opening ../../Modules/SandBox/ModuleData/Languages\std_StoryMode_View.xml 
+[19:46:47.9304249] Loading localized text xml. 
+[19:46:47.9304249] opening ../../Modules/SandBox/ModuleData/Languages\std_StoryMode_ViewModelCollection.xml 
+[19:46:47.9504261] Loading localized text xml. 
+[19:46:47.9504261] opening ../../Modules/SandBox/ModuleData/Languages\std_TaleWorlds_CampaignSystem.xml 
+[19:46:47.9834280] Loading localized text xml. 
+[19:46:47.9844280] opening ../../Modules/SandBox/ModuleData/Languages\std_TaleWorlds_CampaignSystem_ViewModelCollection.xml 
+[19:46:48.0014290] Loading localized text xml. 
+[19:46:48.0014290] opening ../../Modules/SandBox/ModuleData/Languages\std_TaleWorlds_MountAndBlade_CustomBattle.xml 
+[19:46:48.0114296] Loading localized text xml. 
+[19:46:48.0114296] opening ../../Modules/SandBox/ModuleData/Languages\std_trait_strings_xml.xml 
+[19:46:48.0184300] Loading localized text xml. 
+[19:46:48.0184300] opening ../../Modules/SandBox/ModuleData/Languages\std_voice_strings_xml.xml 
+[19:46:48.0364310] Loading localized text xml. 
+[19:46:48.0364310] opening ../../Modules/SandBox/ModuleData/Languages\std_wanderer_strings_xml.xml 
+[19:46:48.0504318] Loading localized text xml. 
+[19:46:48.0504318] opening ../../Modules/SandBox/ModuleData/Languages\std_world_lore_strings_xml.xml 
+[19:46:48.0894340] Loading localized text xml. 
+[19:46:48.0894340] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_action_strings_xml-zho-CN.xml 
+[19:46:48.0984345] Loading localized text xml. 
+[19:46:48.0994346] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_bandits_xml-zho-CN.xml 
+[19:46:48.1104352] Loading localized text xml. 
+[19:46:48.1104352] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_caravans_xml-zho-CN.xml 
+[19:46:48.1274362] Loading localized text xml. 
+[19:46:48.1274362] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_comment_on_action_strings_xml-zho-CN.xml 
+[19:46:48.1464373] Loading localized text xml. 
+[19:46:48.1464373] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_comment_strings_xml-zho-CN.xml 
+[19:46:48.1654384] Loading localized text xml. 
+[19:46:48.1664384] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_companions_xml-zho-CN.xml 
+[19:46:48.1724388] Loading localized text xml. 
+[19:46:48.1724388] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_companion_strings_xml-zho-CN.xml 
+[19:46:48.1904398] Loading localized text xml. 
+[19:46:48.1904398] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_concept_strings_xml-zho-CN.xml 
+[19:46:48.2074408] Loading localized text xml. 
+[19:46:48.2074408] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_conversations_xml-zho-CN.xml 
+[19:46:48.2234417] Loading localized text xml. 
+[19:46:48.2234417] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_game_menus_xml-zho-CN.xml 
+[19:46:48.2354424] Loading localized text xml. 
+[19:46:48.2354424] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_heroes_xml-zho-CN.xml 
+[19:46:48.2484431] Loading localized text xml. 
+[19:46:48.2484431] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_location_complex_templates_xml-zho-CN.xml 
+[19:46:48.2624439] Loading localized text xml. 
+[19:46:48.2624439] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_lords_xml-zho-CN.xml 
+[19:46:48.2714444] Loading localized text xml. 
+[19:46:48.2714444] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_lord_conversations_xml-zho-CN.xml 
+[19:46:48.2724445] Loading localized text xml. 
+[19:46:48.2724445] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_minor_faction_conversations_xml-zho-CN.xml 
+[19:46:48.2804449] Loading localized text xml. 
+[19:46:48.2804449] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_module_strings_xml-zho-CN.xml 
+[19:46:48.2864453] Loading localized text xml. 
+[19:46:48.2864453] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_SandBox-zho-CN.xml 
+[19:46:48.3124468] Loading localized text xml. 
+[19:46:48.3134468] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_SandBox_GauntletUI-zho-CN.xml 
+[19:46:48.3194472] Loading localized text xml. 
+[19:46:48.3194472] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_SandBox_View-zho-CN.xml 
+[19:46:48.3264476] Loading localized text xml. 
+[19:46:48.3264476] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_SandBox_ViewModelCollection-zho-CN.xml 
+[19:46:48.3274476] Loading localized text xml. 
+[19:46:48.3274476] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_settlements_xml-zho-CN.xml 
+[19:46:48.3594495] Loading localized text xml. 
+[19:46:48.3594495] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_spclans_xml-zho-CN.xml 
+[19:46:48.3724502] Loading localized text xml. 
+[19:46:48.3724502] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_spkingdoms_xml-zho-CN.xml 
+[19:46:48.3734503] Loading localized text xml. 
+[19:46:48.3744503] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_spprojects_xml-zho-CN.xml 
+[19:46:48.3804507] Loading localized text xml. 
+[19:46:48.3804507] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_spspecialcharacters_xml-zho-CN.xml 
+[19:46:48.3874511] Loading localized text xml. 
+[19:46:48.3874511] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_spworkshops_xml-zho-CN.xml 
+[19:46:48.3934514] Loading localized text xml. 
+[19:46:48.3944515] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_StoryMode-zho-CN.xml 
+[19:46:48.4324536] Loading localized text xml. 
+[19:46:48.4334537] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_StoryMode_GauntletUI-zho-CN.xml 
+[19:46:48.4334537] Loading localized text xml. 
+[19:46:48.4334537] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_StoryMode_View-zho-CN.xml 
+[19:46:48.4344537] Loading localized text xml. 
+[19:46:48.4344537] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_StoryMode_ViewModelCollection-zho-CN.xml 
+[19:46:48.4354538] Loading localized text xml. 
+[19:46:48.4354538] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_TaleWorlds_CampaignSystem-zho-CN.xml 
+[19:46:48.4664556] Loading localized text xml. 
+[19:46:48.4684557] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_TaleWorlds_CampaignSystem_ViewModelCollection-zho-CN.xml 
+[19:46:48.4814564] Loading localized text xml. 
+[19:46:48.4814564] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_TaleWorlds_MountAndBlade_CustomBattle-zho-CN.xml 
+[19:46:48.4884568] Loading localized text xml. 
+[19:46:48.4884568] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_trait_strings_xml-zho-CN.xml 
+[19:46:48.4954572] Loading localized text xml. 
+[19:46:48.4954572] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_voice_strings_xml-zho-CN.xml 
+[19:46:48.5024576] Loading localized text xml. 
+[19:46:48.5024576] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_wanderer_strings_xml-zho-CN.xml 
+[19:46:48.5124582] Loading localized text xml. 
+[19:46:48.5124582] opening ../../Modules/SandBox/ModuleData/Languages\CNs\std_world_lore_strings_xml-zho-CN.xml 
+[19:46:48.5194586] Loading localized text xml. 
+[19:46:48.5194586] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_action_strings_xml_tr.xml 
+[19:46:48.5424599] Loading localized text xml. 
+[19:46:48.5424599] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_bandits_xml_tr.xml 
+[19:46:48.5434600] Loading localized text xml. 
+[19:46:48.5434600] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_caravans_xml_tr.xml 
+[19:46:48.5524605] Loading localized text xml. 
+[19:46:48.5524605] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_comment_on_action_strings_xml_tr.xml 
+[19:46:48.5634611] Loading localized text xml. 
+[19:46:48.5634611] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_comment_strings_xml_tr.xml 
+[19:46:48.5764619] Loading localized text xml. 
+[19:46:48.5764619] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_companions_xml_tr.xml 
+[19:46:48.5904627] Loading localized text xml. 
+[19:46:48.5904627] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_companion_strings_xml_tr.xml 
+[19:46:48.6374654] Loading localized text xml. 
+[19:46:48.6384654] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_concept_strings_xml_tr.xml 
+[19:46:48.6454658] Loading localized text xml. 
+[19:46:48.6454658] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_conversations_xml_tr.xml 
+[19:46:48.6804678] Loading localized text xml. 
+[19:46:48.6814679] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_game_menus_xml_tr.xml 
+[19:46:48.6904684] Loading localized text xml. 
+[19:46:48.6904684] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_location_complex_templates_xml_tr.xml 
+[19:46:48.7044692] Loading localized text xml. 
+[19:46:48.7044692] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_lords_xml_tr.xml 
+[19:46:48.7244703] Loading localized text xml. 
+[19:46:48.7244703] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_lord_conversations_xml_tr.xml 
+[19:46:48.7314707] Loading localized text xml. 
+[19:46:48.7324708] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_minor_faction_conversations_xml_tr.xml 
+[19:46:48.7384711] Loading localized text xml. 
+[19:46:48.7384711] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_module_strings_xml_tr.xml 
+[19:46:48.7514719] Loading localized text xml. 
+[19:46:48.7514719] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_SandBox_GauntletUI_tr.xml 
+[19:46:48.7704730] Loading localized text xml. 
+[19:46:48.7704730] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_SandBox_tr.xml 
+[19:46:48.7954744] Loading localized text xml. 
+[19:46:48.7954744] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_SandBox_ViewModelCollection_tr.xml 
+[19:46:48.8034749] Loading localized text xml. 
+[19:46:48.8034749] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_SandBox_View_tr.xml 
+[19:46:48.8144755] Loading localized text xml. 
+[19:46:48.8144755] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_settlements_xml_tr.xml 
+[19:46:48.8294763] Loading localized text xml. 
+[19:46:48.8294763] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_spclans_xml_tr.xml 
+[19:46:48.8364767] Loading localized text xml. 
+[19:46:48.8364767] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_spkingdoms_xml_tr.xml 
+[19:46:48.8434771] Loading localized text xml. 
+[19:46:48.8434771] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_spprojects_xml_tr.xml 
+[19:46:48.8504775] Loading localized text xml. 
+[19:46:48.8504775] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_spspecialcharacters_xml_tr.xml 
+[19:46:48.8684786] Loading localized text xml. 
+[19:46:48.8684786] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_spworkshops_xml_tr.xml 
+[19:46:48.8694786] Loading localized text xml. 
+[19:46:48.8694786] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_StoryMode_GauntletUI_tr.xml 
+[19:46:48.8704787] Loading localized text xml. 
+[19:46:48.8704787] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_StoryMode_tr.xml 
+[19:46:48.8934800] Loading localized text xml. 
+[19:46:48.8944801] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_StoryMode_ViewModelCollection_tr.xml 
+[19:46:48.8954801] Loading localized text xml. 
+[19:46:48.8954801] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_StoryMode_View_tr.xml 
+[19:46:48.9014805] Loading localized text xml. 
+[19:46:48.9014805] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_TaleWorlds_CampaignSystem_tr.xml 
+[19:46:48.9334823] Loading localized text xml. 
+[19:46:48.9344823] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_TaleWorlds_CampaignSystem_ViewModelCollection_tr.xml 
+[19:46:48.9554836] Loading localized text xml. 
+[19:46:48.9554836] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_TaleWorlds_MountAndBlade_CustomBattle_xml_tr.xml 
+[19:46:48.9754847] Loading localized text xml. 
+[19:46:48.9754847] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_trait_strings_xml_tr.xml 
+[19:46:48.9864853] Loading localized text xml. 
+[19:46:48.9864853] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_voice_strings_xml_tr.xml 
+[19:46:49.0084866] Loading localized text xml. 
+[19:46:49.0084866] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_wanderer_strings_xml_tr.xml 
+[19:46:49.0204873] Loading localized text xml. 
+[19:46:49.0204873] opening ../../Modules/SandBox/ModuleData/Languages\TR\std_world_lore_strings_xml_tr.xml 
+[19:46:49.0274877] Loading localized text xml. 
+[19:46:49.0274877] opening ../../Modules/SandBoxCore/ModuleData/Languages\std_spcultures_xml.xml 
+[19:46:49.0524891] Loading localized text xml. 
+[19:46:49.0524891] opening ../../Modules/SandBoxCore/ModuleData/Languages\std_spitems_xml.xml 
+[19:46:49.0744904] Loading localized text xml. 
+[19:46:49.0744904] opening ../../Modules/SandBoxCore/ModuleData/Languages\std_spnpccharacters_xml.xml 
+[19:46:49.0834909] Loading localized text xml. 
+[19:46:49.0834909] opening ../../Modules/SandBoxCore/ModuleData/Languages\CNs\std_spcultures_xml-zho-CN.xml 
+[19:46:49.1024920] Loading localized text xml. 
+[19:46:49.1024920] opening ../../Modules/SandBoxCore/ModuleData/Languages\CNs\std_spitems_xml-zho-CN.xml 
+[19:46:49.1254933] Loading localized text xml. 
+[19:46:49.1254933] opening ../../Modules/SandBoxCore/ModuleData/Languages\CNs\std_spnpccharacters_xml-zho-CN.xml 
+[19:46:49.1384940] Loading localized text xml. 
+[19:46:49.1384940] opening ../../Modules/SandBoxCore/ModuleData/Languages\TR\std_spcultures_xml_tr.xml 
+[19:46:49.1594952] Loading localized text xml. 
+[19:46:49.1594952] opening ../../Modules/SandBoxCore/ModuleData/Languages\TR\std_spitems_xml_tr.xml 
+[19:46:49.1794964] Loading localized text xml. 
+[19:46:49.1794964] opening ../../Modules/SandBoxCore/ModuleData/Languages\TR\std_spnpccharacters_xml_tr.xml 
+[19:46:49.1954973] Loading localized text xml. 
+[19:46:49.1954973] opening ../../Modules/StoryMode/ModuleData/Languages\std_location_complex_templates_xml.xml 
+[19:46:49.2014976] Loading localized text xml. 
+[19:46:49.2014976] opening ../../Modules/StoryMode/ModuleData/Languages\std_module_strings_xml.xml 
+[19:46:49.2184986] Loading localized text xml. 
+[19:46:49.2184986] opening ../../Modules/StoryMode/ModuleData/Languages\std_storymode_characters_xml.xml 
+[19:46:49.2214988] Loading localized text xml. 
+[19:46:49.2214988] opening ../../Modules/StoryMode/ModuleData/Languages\std_story_mode_settlements_xml.xml 
+[19:46:49.2224988] Loading localized text xml. 
+[19:46:49.2224988] opening ../../Modules/StoryMode/ModuleData/Languages\CNs\std_location_complex_templates_xml-zho-CN.xml 
+[19:46:49.2234989] Loading localized text xml. 
+[19:46:49.2234989] opening ../../Modules/StoryMode/ModuleData/Languages\CNs\std_module_strings_xml-zho-CN.xml 
+[19:46:49.2384997] Loading localized text xml. 
+[19:46:49.2384997] opening ../../Modules/StoryMode/ModuleData/Languages\CNs\std_storymode_characters_xml-zho-CN.xml 
+[19:46:49.2465002] Loading localized text xml. 
+[19:46:49.2465002] opening ../../Modules/StoryMode/ModuleData/Languages\CNs\std_story_mode_settlements_xml-zho-CN.xml 
+[19:46:49.2475003] Loading localized text xml. 
+[19:46:49.2475003] opening ../../Modules/StoryMode/ModuleData/Languages\TR\std_location_complex_templates_xml_tr.xml 
+[19:46:49.2535006] Loading localized text xml. 
+[19:46:49.2535006] opening ../../Modules/StoryMode/ModuleData/Languages\TR\std_module_strings_xml_tr.xml 
+[19:46:49.2605010] Loading localized text xml. 
+[19:46:49.2605010] opening ../../Modules/StoryMode/ModuleData/Languages\TR\std_storymode_characters_xml_tr.xml 
+[19:46:49.2705016] Loading localized text xml. 
+[19:46:49.2705016] opening ../../Modules/StoryMode/ModuleData/Languages\TR\std_story_mode_settlements_xml_tr.xml 
+[19:46:49.2715016] Loading localized text xml. 
+[19:46:49.4405113] Module Initialize begin... 
+[19:46:49.4825137] Loading submodules... 
+
+<##########################################################################################>
+
+#kernelbase.pdb@{B4560FC25D854BD5A2F73DC9FED50F99} (2): 0:47229
+#clr.pdb@{D7C78ABFD9684115928D6BB4C3E49575} (2): 0:1146554
+#clr.pdb@{D7C78ABFD9684115928D6BB4C3E49575} (2): 0:4467075
+#clr.pdb@{D7C78ABFD9684115928D6BB4C3E49575} (2): 0:3806519
+#mscorlib.pdb@{71C102453C344F348D4133088A12776E} (2): 0:5115361
+#mscorlib.pdb@{71C102453C344F348D4133088A12776E} (2): 0:4903100
+#mscorlib.pdb@{71C102453C344F348D4133088A12776E} (2): 0:4829172
+@unknown_module@unknown_source (unknown_line): unknown_function
+@unknown_module@unknown_source (unknown_line): unknown_function
+@unknown_module@unknown_source (unknown_line): unknown_function
+@unknown_module@unknown_source (unknown_line): unknown_function
+#clr.pdb@{D7C78ABFD9684115928D6BB4C3E49575} (2): 0:8718
+#Game.pdb@{6839BD707AA345F6AFFDF7549A31BB40} (1): 0:1255430
+#FairyTale.DotNet.pdb@{9E59A8EDE7564999B8A67DCFFBE4B14E} (1): 0:21376
+#Rgl.pdb@{86C73375158640B8996F7933801BED17} (1): 0:4510717
+#Rgl.pdb@{86C73375158640B8996F7933801BED17} (1): 0:4496801
+#Rgl.pdb@{86C73375158640B8996F7933801BED17} (1): 0:4263729
+#Rgl.pdb@{86C73375158640B8996F7933801BED17} (1): 0:4263496
+#Rgl.pdb@{86C73375158640B8996F7933801BED17} (1): 0:4266839
+#ucrtbase.pdb@{C3DD2C823498457082399DB3EC47FBAC} (1): 0:128160
+#kernel32.pdb@{FEEA79F55E624E1DA0F353BE5475022C} (2): 0:87405
+#ntdll.pdb@{0A682A2081CD49B19C5CB94160307438} (1): 0:341805
+-----------------------------------------------
+No managed frames available.
+
+
+
+Page Allocator Memory: 0 MB
+Working Memory: 1318 MB
+Commit Memory: 1512 MB
+
+DumpSendPath: \\rglfileserver\Crashes/2020-04-06_19.47.19 
+AutoReport: Disabled 
+
